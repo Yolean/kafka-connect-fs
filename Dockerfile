@@ -31,3 +31,5 @@ RUN set -e; cd /usr/local; \
 
 # http://kafka-connect-fs.readthedocs.io/en/latest/connector.html#running-in-development
 #export CLASSPATH="$(find /usr/local/kafka-connect-fs/target/kafka-connect-fs-*-package -type f -name '*.jar' | tr '\n' ':')"
+
+COPY connect-logsraw-standalone.properties config/
